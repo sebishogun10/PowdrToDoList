@@ -5,17 +5,13 @@ import com.example.todobackend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-// Import statements
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
-// Import statements
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-// Import statements
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-// Import statements
 import java.io.IOException;
 import java.util.Optional;
 
@@ -54,7 +50,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             }
 
         } catch (Exception ex) {
-            // Log the exception
             ex.printStackTrace();
         }
 
